@@ -1,12 +1,417 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="descritption" content="Algorithmic Trading in the Foreign Exchange Market">
+        <meta name="keywords" content="Software, Algorithm, Financial Engineering, FX, Currency, AlgoMind, Machine Learning, Program, Banks, Finance">
+        <meta name="author" content="AlgoMind">
+        <meta name="viewport" content="width=device-width", initial-scale=1>
 
-<h1>IT Praxis Projekt Website</h1>
+        <title>AlgoMind</title>
+        
+        <link rel = "icon" href="Pictures/logo_icon.png" type = "image/x-icon">
 
-<p><a href="https://github.com/nkoch424/ITProject-Website">Edit in Github</a></p>
-  
-<p><b>Have fun</b></p>
+        <link rel="stylesheet" type="text/css" href="CSS/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/general.css">
 
-</body>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <!--HEADER-->
+
+            <header>
+                <div id="logo" href="#home">
+                    <a href="#home1">
+                    <img src="Pictures/logo_text.png" alt="Logo">
+                    </a>
+                </div>
+
+                <nav id="main-nav">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <ul>
+                        <li><a href="#home1">Home</a></li>
+                        <li><a href="#software1">Software</a></li>
+                        <li><a href="#we1">Team</a></li>
+                        <li><a href="#contact1">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+        <!--MAIN-->
+        
+        <main>
+
+        <!--HOME-->  
+        
+        <section class="home">
+            <q id="home1"></q>
+
+            <video autoplay muted loop playsinline>
+                <source src="Pictures/slowfilm.mp4" type="video/mp4">
+            </video>
+              
+            <div class="content">
+                <h1>Algorithmic Trading System for FX</h1>
+                <h2>An innovative algorithm that does everything by itself. We guarantee security, transparency and positive returns.</h2>
+               
+                <a href="#software1" title="Software">
+                    <img src="Pictures/pfeil.png" alt="Arrow">
+                </a>
+
+            </div>
+        </section>
+
+        <!--JS SLIDER-->
+
+        <section class="slider">
+            <div class="slidercontainer">
+
+                <a href="#product1" class="mySlides" style="order:4; background-image: url(Pictures/tbd.jpg);">
+                    <div class="overlay"> <h2>1. <br> Fachliche Info <br></h2></div>
+                </a>
+
+                <a href="#product2" class="mySlides" style="order: 1; background-image: url(Pictures/tbd.jpg);">
+                    <div class="overlay"><h2>2. <br> Fachliche Info 2 <br></h2></div>
+                </a>
+
+                <a href="#product3" class="mySlides" style="order:2; background-image: url(Pictures/tbd.jpg);">
+                    <div class="overlay"><h2>3. <br> Fachliche Info 3</h2></div>
+                </a>
+
+                <a href="#product4" class="mySlides" style="order:3; background-image: url(Pictures/tbd.jpg);">
+                    <div class="overlay"><h2>4. <br> Fachliche Info 4</h2></div>
+                </a>
+                
+                <button class="links" onclick="plusDivs(-1)"> &#10094;</button>
+                <button class="rechts" onclick="plusDivs(1)">&#10095;</button>
+             </div>
+        </section>
+
+        <script>
+            var mq = window.matchMedia( "(max-width: 600px)" );
+            if(mq.matches) {
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length};
+                    for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                    }
+
+                    x[slideIndex-1].style.display = "block";
+                }
+            }
+            
+            else {
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    x[0].style.order = "1";
+                    if (n > x.length) {
+                        slideIndex = 1; 
+                    }
+                    if (n < 1) {slideIndex = x.length-1}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                    }
+                    if(n == x.length) {
+                        x[slideIndex-1].style.display = "block"; 
+                        x[slideIndex-4].style.order = "5"; 
+                        x[slideIndex-4].style.display = "block"; 
+                    }
+
+                    x[slideIndex-1].style.display = "block"; 
+                    x[slideIndex].style.display = "block";  
+                }
+            }
+        </script>
+
+        <!--TWITTERBOX-->
+
+        <section class="news">
+
+            <h3>Tweets from the industry</h3>
+            <hr>
+
+            <div class="container">
+
+                <div class="twitterbox">
+                    <a class="twitter-timeline" data-width="1200" href="https://twitter.com/fx_newsletter?s=20&t=8lXQjuy-kUZnOMkRpRBKLA">A Twitter List by AlgoMind</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+
+                <div class ="textR">
+                    <h2>ALways up to date
+                    </h2>
+                    <p>We live in a discontinuous world. Every tweet can overturn the existing social or economic order. We can no longer counter this discontinuity in the financial industry with rigid structures, teams, products and paradigms, we firmly believe. Elasticity and anticipation, coupled with maximum intellectual as well as technical flexibility, interdisciplinary, that is our answer to discontinuity, that is how we have assembled our team. We believe that new business models today need to be digital, algorithmic and fast in action in order to be heard by clients. We combine this understanding with our extensive industry experience and our flair for digital trends, software creation and technologies to develop ideas that have substance, make an impact on society and create great value for our clients.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--FACHLICHE 1-->
+
+        <section class="news">
+
+            <h3>Fachliche 1</h3>
+            <hr>
+            
+            <q id="software1"></q>
+            <div class="container">
+
+                <div class="fotobox">
+                    <img src="Pictures/tbd.jpg" alt="Fachliche 1">
+                </div>
+
+                <div class ="textR">
+                    <h2>
+                        1. <br> Fachliche that influences our software
+                    </h2>
+                    <p>
+                        Explain the fachliche aspect.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="linebreak">
+            <hr>
+        </div>
+
+        <!--TEAM-->
+
+        <section class="we">
+            <q id="we1" name="we1"></q>
+
+            <h3>Team</h3>
+            <hr>
+
+            <div class="prologue">
+                <p>Text about the company and team behind it
+                </p>
+                <br>
+            </div>
+
+            <div class="containerPerson">
+                <!--1. Person-->
+                <div class="person2">
+                    <img class="we" src="Pictures/kian.jpg" alt="Avatar">
+                    <h4>Kian Rokni <br> Project Management</h4>
+                    <p>Student at the Frankfurt School of Finance & Management. Responsible for the controlling department and the development of the AlgoMind website.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <!--2. Person-->
+                <div class="person2">
+                    <img class="we" src="Pictures/kian.jpg" alt="Avatar">
+                    <h4>Kian Rokni <br> Project Management</h4>
+                    <p>Student at the Frankfurt School of Finance & Management. Responsible for the controlling department and the development of the AlgoMind website.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <!--3. Person-->
+                <div class="person2">
+                    <img class="we" src="Pictures/kian.jpg" alt="Avatar">
+                    <h4>Kian Rokni <br> Project Management</h4>
+                    <p>Student at the Frankfurt School of Finance & Management. Responsible for the controlling department and the development of the AlgoMind website.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <!--4. Person-->
+                <div class="person2">
+                    <img class="we" src="Pictures/kian.jpg" alt="Avatar">
+                    <h4>Kian Rokni <br> Project Management</h4>
+                    <p>Student at the Frankfurt School of Finance & Management. Responsible for the controlling department and the development of the AlgoMind website.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <!--5. Person-->
+                <div class="person2">
+                    <img class="we" src="Pictures/kian.jpg" alt="Avatar">
+                    <h4>Kian Rokni <br> Project Management</h4>
+                    <p>Student at the Frankfurt School of Finance & Management. Responsible for the controlling department and the development of the AlgoMind website.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <!--6. Person-->
+                <div class="person2">
+                    <img class="we" src="Pictures/kian.jpg" alt="Avatar">
+                    <h4>Kian Rokni <br> Project Management</h4>
+                    <p>Student at the Frankfurt School of Finance & Management. Responsible for the controlling department and the development of the AlgoMind website.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <!--7. Person-->
+                <div class="person2">
+                    <img class="we" src="Pictures/kian.jpg" alt="Avatar">
+                    <h4>Kian Rokni <br> Project Management</h4>
+                    <p>Student at the Frankfurt School of Finance & Management. Responsible for the controlling department and the development of the AlgoMind website.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <!--8. Person-->
+                <div class="person2">
+                    <img class="we" src="Pictures/kian.jpg" alt="Avatar">
+                    <h4>Kian Rokni <br> Project Management</h4>
+                    <p>Student at the Frankfurt School of Finance & Management. Responsible for the controlling department and the development of the AlgoMind website.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <!--9. Person-->
+                <div class="person2">
+                    <img class="we" src="Pictures/kian.jpg" alt="Avatar">
+                    <h4>Kian Rokni <br> Project Management</h4>
+                    <p>Student at the Frankfurt School of Finance & Management. Responsible for the controlling department and the development of the AlgoMind website.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <!--10. Person-->
+                <div class="person2">
+                    <img class="we" src="Pictures/kian.jpg" alt="Avatar">
+                    <h4>Kian Rokni <br> Project Management</h4>
+                    <p>Student at the Frankfurt School of Finance & Management. Responsible for the controlling department and the development of the AlgoMind website.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <!--11. Person-->
+                <div class="person2">
+                    <img class="we" src="Pictures/kian.jpg" alt="Avatar">
+                    <h4>Kian Rokni <br> Project Management</h4>
+                    <p>Student at the Frankfurt School of Finance & Management. Responsible for the controlling department and the development of the AlgoMind website.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <!-- Platzhalter -->
+                <div class="person2 placeholder">
+                    <img class="we" src="" alt="">
+                    <h4> <br> </h4>
+                    <p>
+                    </p>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </section>
+
+        <!--BANNER-->
+
+        <section class ="banner">
+            <q id="contact1"></q>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="column3">
+                        <img src="Pictures/logo_icon.png" alt="Logo">
+                        <h2>Need more help? <br> <b>Contact us.</b></h2>
+                    </div>
+                    
+                    <div class="column4">
+                        <br>
+                        <a href="mailto:kian.rokni@fs-students.de"><button class="button2" style="vertical-align:middle"><span>Contact</span></button></a>
+                    </div>
+            
+                </div>
+
+            </div>
+        </section>
+
+        <!--LEGAL-->
+
+        <section class="legal">
+            <div class="containerlegal">
+
+                <div class="rowinfo">
+                    <div class="col1">
+                        <h4 class="line">
+                            <b>LEGAL</b>
+                            <hr>
+                            <p>
+                                <a href="privacy_policy.html" title="Privacy Policy">Privacy Policy</a>
+                            </p>
+                            <p>
+                                <a href="disclaimer.html" title="Disclaimer">Disclaimer</a>
+                            </p>
+                        </h4>
+                    </div>
+
+                    <div class="col2">
+                        <h4 class="line">
+                            <b>ADDRESS</b>
+                            <hr>
+                            <p>AlgoMind</p>
+                            <p>Adickesallee 32-34</p>
+                            <p>60322 Frankfurt am Main</p>
+                        </h4>
+                    </div>
+
+                    <div class="col3">
+                        <h4 class="line">
+                            <b>CONTACT</b>
+                            <hr>
+                            <p>Tel: +49 69 154 008 0</p>
+                            <p>
+                                <a href="mailto:kian.rokni@fs-students.de">Mail: kian.rokni@fs-students.de</a>
+                            </p>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--FOOTER-->
+
+        <section class="footer">
+            <footer>
+
+                <div></div>
+                <div class="footerText">
+                    <p>
+                        &copy;  2022 &nbsp; AlgoMind
+                    </p>
+                </div>
+                <div class="social">
+                    <a target="_blank" href="https://twitter.com/" title="Twitter Konto">
+                        <img src="Pictures/twitter.png" alt="Twitter">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/" title="LinkedIn Konto">
+                        <img src="Pictures/linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </footer>
+        </section>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="JS/Mobile-Menu.js"></script>
+    </body>
 </html>
