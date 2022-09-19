@@ -64,8 +64,8 @@ p {
 hr {
   width: 40px;
   height: 4px;
-  color: #00acee;
-  background-color: #00acee;
+  color: #07bad5;
+  background-color: #07bad5;
   margin: 5px auto 50px auto;
   border: none;
 }
@@ -88,7 +88,7 @@ main {
 
 button {
   display: inline-block;
-  background-color: #00acee;
+  background-color: #07bad5;
   border: none;
   color: #ffffff;
   text-align: center;
@@ -151,9 +151,9 @@ header {
 }
 
 #logo {
-  width: 230px;
+  width: 200px;
   float: left;
-  margin: 20px 0 0 50px;
+  margin: 10px 0 0 20px;
 }
 
 #logo:hover {
@@ -450,7 +450,7 @@ header nav ul li:hover {
   text-align: justify;
 }
 
-.containerPersonen {
+.containerPerson {
   margin: 20px 0 10px 0;
   display: flex;
   flex-direction: row;
