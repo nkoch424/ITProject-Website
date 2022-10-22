@@ -39,7 +39,7 @@ h3 {
     margin: 0;
 }
 
-h4, p {
+h4, h5, p {
     font-family: 'Montserrat', sans-serif;
     color: black;
     text-align: justify;
@@ -121,6 +121,7 @@ header nav ul li:hover {
     font-weight: 500;
     color: black;
     text-decoration: underline;
+    text-transform: none;
 }
 
 /* MEDIA QUERIES **************/
