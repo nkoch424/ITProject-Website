@@ -1,3 +1,4 @@
+
 html,
 body {
   margin: 0px;
@@ -352,7 +353,7 @@ header nav ul li:hover {
 /* NEWS *******/
 
 .news {
-  padding: 40px 0 40px 0;
+  padding: 50px 0;
   position: relative;
 }
 
@@ -417,7 +418,7 @@ header nav ul li:hover {
 .we {
   box-sizing: border-box;
   position: relative;
-  padding: 40px 0;
+  padding: 50px 0;
   margin-top: 40px;
 }
 
@@ -474,6 +475,79 @@ header nav ul li:hover {
 .person2 h4 {
   font-size: 15px;
   text-align: center;
+}
+
+/* FAQ ********/
+
+.faq {
+  padding: 50px 0;
+  position: relative;
+}
+
+.faq .accordion .accordion-item {
+  background-color:#dddddd;
+  border-radius: .3rem;
+  margin-bottom: 1rem;
+  padding: .5rem;
+  box-shadow: .5rem 2px .5rem rgba(0, 0, 0, 0.1);
+  border: #050505 solid 1px;
+}
+
+.faq .accordion .accordion-link { 
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 0;
+}
+
+.faq .accordion .accordion-link .ion-md-arrow-dropup-circle {
+  display: none;
+  font-size: 40px;
+  color:#07bad5
+}
+
+.faq .accordion .accordion-link .ion-md-arrow-dropdown-circle {
+  font-size: 40px;
+  color:#050505
+}
+
+.faq .accordion .answer {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 800ms;
+  background-color: #bab8b8;
+}
+
+.faq .accordion .answer p {
+  padding-left: 2rem;
+  padding-right: 4rem;
+  vertical-align: middle
+}
+
+.faq .accordion .answer::before {
+  content: "";
+  position: absolute;
+  width: .9rem;
+  height: 100%;
+  background-color: #07bad5;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.faq .accordion .accordion-item:target .answer { 
+  max-height: 7rem;
+}
+
+.faq .accordion .accordion-item:target .accordion-link .ion-md-arrow-dropdown-circle { 
+  display: none;
+}
+
+.faq .accordion .accordion-item:target .accordion-link .ion-md-arrow-dropup-circle {
+  display: block;
 }
 
 /* PARTNER ********/
