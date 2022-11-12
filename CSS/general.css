@@ -422,15 +422,75 @@ header nav ul li:hover {
   margin-top: 40px;
 }
 
-.we .prologue p {
-  margin-left: 9%;
-  margin-right: 9%;
-  text-align: justify;
+.we .prologue h2 {
+  margin-left: 3%;
+  text-align: left;
 }
 
-.we img {
-  width: 40%;
+.we .slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #dddddd;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  /*border: 4px solid #4070F4;*/
+}
+.slide-container .swiper-navBtn{
+  color: #011446;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color:  #06bad6;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.slide-container .swiper-pagination-bullet{
+  background-color:#5d7177;
+  opacity: 1;
+}
+.slide-container .swiper-pagination-bullet-active{
+  background-color: #06bad6;
 }
 
 .we img:hover {
@@ -438,8 +498,21 @@ header nav ul li:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
+  border:4px solid #06bad6;
 }
 
+/*.person2 {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 20%;
+  min-width: 180px;
+  box-sizing: border-box;
+  font-size: smaller;
+  background-color: #dddddd;
+}
+*/
+
+/*
 .we h4 {
   font-size: 18px;
   max-width: 100%;
@@ -459,14 +532,7 @@ header nav ul li:hover {
   justify-content: center;
 }
 
-.person2 {
-  margin-right: 5px;
-  margin-left: 5px;
-  width: 20%;
-  min-width: 180px;
-  box-sizing: border-box;
-  font-size: smaller;
-}
+
 
 .person2 p {
   font-size: 15px;
@@ -505,12 +571,12 @@ header nav ul li:hover {
 .faq .accordion .accordion-link .ion-md-arrow-dropup-circle {
   display: none;
   font-size: 40px;
-  color:#07bad5
+  color: #06bad6
 }
 
 .faq .accordion .accordion-link .ion-md-arrow-dropdown-circle {
   font-size: 40px;
-  color:#050505
+  color: #011446;
 }
 
 .faq .accordion .answer {
@@ -532,7 +598,7 @@ header nav ul li:hover {
   position: absolute;
   width: .9rem;
   height: 100%;
-  background-color: #07bad5;
+  background-color: #06bad6;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
