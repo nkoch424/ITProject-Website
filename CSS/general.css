@@ -428,12 +428,12 @@ header nav ul li:hover {
 }
 
 .we .slide-container{
-  max-width: 1120px;
+  /*max-width: 1120px;*/
   width: 100%;
   padding: 40px 0;
 }
 .slide-content{
-  margin: 0 40px;
+  margin: 0 50px;  
   overflow: hidden;
   border-radius: 25px;
 }
@@ -452,11 +452,12 @@ header nav ul li:hover {
   position: relative;
   row-gap: 5px;
   padding: 25px 0;
+  padding-bottom: 0;
 }
 .card-image{
   position: relative;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   background: #FFF;
   padding: 3px;
