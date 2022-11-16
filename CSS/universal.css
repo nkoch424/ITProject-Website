@@ -11,6 +11,7 @@ section {
     margin:20px;
     max-width:100%;
     box-sizing: border-box;
+    position: relative;
 }
 
 a {
@@ -78,7 +79,7 @@ header {
 #logo {
     width: 200px;
     float: left;
-    margin: 10px 0 0 20px;
+    margin: 10px 0 0 0;
 }
 
 #logo:hover {
@@ -86,7 +87,7 @@ header {
 }
 
 #logo img {
-    width: 100%;
+    width: 70%;
 }
 
 header nav {
@@ -112,8 +113,7 @@ header nav ul li:hover {
 .legal {
     float: left;
     text-align: left;
-    margin-top: 50px;
-    margin-left: 50px;
+    padding: 50px 0;
 }
 
 .legal a {
