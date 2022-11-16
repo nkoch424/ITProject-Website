@@ -167,12 +167,11 @@ header {
 
 header nav {
   float: right;
-  margin: 10px 50px 0 0;
+  margin: 10px 25px 0 0;
 }
 
 header nav ul li {
   float: left;
-  margin-left: 25px;
 }
 
 header nav ul li {
@@ -181,6 +180,17 @@ header nav ul li {
 
 header nav ul li:hover {
   padding-top: 5px;
+}
+
+header nav ul li a.split {
+  color:#dddddd;
+  background-color:#011446;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+header nav ul li a {
+  padding: 10px 14px;
 }
 
 /* HOME **************/
