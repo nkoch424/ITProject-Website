@@ -200,11 +200,7 @@
             </div>
         </section>
 
-        <div class="linebreak">
-            <hr>
-        </div>
-
-        <!--TEAM-->
+        <!-- TEAM-->
 
         <section class="we">
             <q id="we1" name="we1"></q>
@@ -728,62 +724,81 @@
             
             <h3>FAQ</h3>
             <hr>
-        
-            <q id="faq1"></q>
-            <div class="accordion">
-                <!--Question 1-->
-                <div class="accordion-item" id="question1">
-                    <a class="accordion-link" href="#question1">
-                        Question 1?
-                            <i class="icon ion-md-arrow-dropdown-circle"></i>
-                            <i class="icon ion-md-arrow-dropup-circle"></i>
-                    </a>
-                    <div class="answer">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quaerat quas pariatur placeat aperiam dolorum expedita, eveniet amet debitis totam omnis nostrum. Mollitia consectetur quis dignissimos eligendi at officiis! Repellendus.
-                        </p>
-                     </div>
-                </div>
-                <!--Question 2-->
-                <div class="accordion-item" id="question2">
-                    <a class="accordion-link" href="#question2">
-                        Question 2?
-                        <i class="icon ion-md-arrow-dropdown-circle"></i>
-                        <i class="icon ion-md-arrow-dropup-circle"></i>
-                    </a>
-                    <div class="answer">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quaerat quas pariatur placeat aperiam dolorum expedita, eveniet amet debitis totam omnis nostrum. Mollitia consectetur quis dignissimos eligendi at officiis! Repellendus.
-                        </p>
-                    </div>
-                </div>
-                <!--Question 3-->
-                <div class="accordion-item" id="question3">
-                    <a class="accordion-link" href="#question3">
-                        Question 3?
-                        <i class="icon ion-md-arrow-dropdown-circle"></i>
-                        <i class="icon ion-md-arrow-dropup-circle"></i>
-                    </a>
-                    <div class="answer">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quaerat quas pariatur placeat aperiam dolorum expedita, eveniet amet debitis totam omnis nostrum. Mollitia consectetur quis dignissimos eligendi at officiis! Repellendus.
-                        </p>
-                    </div>
-                </div>
-                <!--Question 4-->
-                <div class="accordion-item" id="question4">
-                    <a class="accordion-link" href="#question4">
-                        Question 4?
-                        <i class="icon ion-md-arrow-dropdown-circle"></i>
-                        <i class="icon ion-md-arrow-dropup-circle"></i>
-                    </a>
-                    <div class="answer">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quaerat quas pariatur placeat aperiam dolorum expedita, eveniet amet debitis totam omnis nostrum. Mollitia consectetur quis dignissimos eligendi at officiis! Repellendus.
-                        </p>
-                    </div>
-                </div>
 
+            <q id="faq1"></q> 
+
+            <button class="accordion">Question 1</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta doloremque obcaecati corporis facere inventore beatae consequatur esse cumque ipsam voluptate quia odit doloribus pariatur non molestias dolore, autem temporibus expedita.
+                </p>
+            </div>
+
+            <button class="accordion">Question 2</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque officia et esse perferendis inventore doloribus impedit dolore consectetur quia veniam blanditiis temporibus voluptate soluta, fugiat exercitationem corrupti minus eius. Perferendis.
+                </p>
+            </div>
+
+            <button class="accordion">Question 3</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam iusto provident non vel veniam error. Incidunt odio vero cupiditate. Eius exercitationem quam eligendi ratione tenetur nesciunt ea sit atque voluptate!
+                </p>
+            </div>
+
+            <button class="accordion">Question 4</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit molestiae architecto, incidunt eius cum harum fuga soluta animi pariatur consectetur! Dolore animi ea voluptatibus quas cupiditate deleniti hic eius adipisci.
+                </p>
             </div>
 
         </section>
 
+        <script >
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+    
+                this.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+        </script>
+
+        <style>
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        </style>
+
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+    
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        }
+        </script>
+        
         <!--BANNER-->
 
         <section class ="banner">

@@ -450,7 +450,7 @@ header nav ul li a {
 }
 .card{
   border-radius: 25px;
-  background-color: #dddddd;
+  background-color: #eee;
 }
 .image-content,
 .card-content{
@@ -520,70 +520,41 @@ header nav ul li a {
   position: relative;
 }
 
-.faq .accordion .accordion-item {
-  background-color:#dddddd;
-  border-radius: .3rem;
-  margin-bottom: 1rem;
-  padding: .5rem;
-  box-shadow: .5rem 2px .5rem rgba(0, 0, 0, 0.1);
-  border: #050505 solid 1px;
-}
-
-.faq .accordion .accordion-link { 
-  text-decoration: none;
+.faq .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: .5rem 0;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
-.faq .accordion .accordion-link .ion-md-arrow-dropup-circle {
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.faq .accordion .panel {
+  padding: 0 18px;
+  background-color: white;
   display: none;
-  font-size: 40px;
-  color: #06bad6
-}
-
-.faq .accordion .accordion-link .ion-md-arrow-dropdown-circle {
-  font-size: 40px;
-  color: #011446;
-}
-
-.faq .accordion .answer {
-  max-height: 0;
   overflow: hidden;
-  position: relative;
-  transition: max-height 800ms;
-  background-color: #bab8b8;
 }
 
-.faq .accordion .answer p {
-  padding-left: 2rem;
-  padding-right: 4rem;
-  vertical-align: middle
+.faq .accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
 }
 
-.faq .accordion .answer::before {
-  content: "";
-  position: absolute;
-  width: .9rem;
-  height: 100%;
-  background-color: #06bad6;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-
-.faq .accordion .accordion-item:target .answer { 
-  max-height: 7rem;
-}
-
-.faq .accordion .accordion-item:target .accordion-link .ion-md-arrow-dropdown-circle { 
-  display: none;
-}
-
-.faq .accordion .accordion-item:target .accordion-link .ion-md-arrow-dropup-circle {
-  display: block;
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 /* PARTNER ********/
