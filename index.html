@@ -747,7 +747,7 @@
 
             <button class="accordion">Question 4</button>
             <div class="panel">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit molestiae architecto, incidunt eius cum harum fuga soluta animi pariatur consectetur! Dolore animi ea voluptatibus quas cupiditate deleniti hic eius adipisci.
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit molestiae architecto, incidunt eius cum harum fuga soluta animi pariatur consectetur! Dolore animi ea voluptatibus quas cupiditate deleniti hic eius adipisci. orem ipsum dolor sit amet consectetur, adipisicing elit. Sit molestiae architecto, incidunt eius cum harum forem ipsum dolor sit amet consectetur, adipisicing elit. Sit molestiae architecto, incidunt eius cum harum forem ipsum dolor sit amet consectetur, adipisicing elit. Sit molestiae architecto, incidunt eius cum harum forem ipsum dolor sit amet consectetur, adipisicing elit. Sit molestiae architecto, incidunt eius cum harum fvorem ipsum dolor sit amet consectetur, adipisicing elit. Sit molestiae architecto, incidunt eius cum harum forem ipsum dolor sit amet consectetur, adipisicing elit. Sit molestiae architecto, incidunt eius cum harum forem ipsum dolor sit amet consectetur, adipisicing elit. Sit molestiae architecto, incidunt eius cum harum f
                 </p>
             </div>
 
@@ -759,9 +759,10 @@
 
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
-    
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
                 this.classList.toggle("active");
-
+                /* Toggle between hiding and showing the active panel */
                 var panel = this.nextElementSibling;
                 if (panel.style.display === "block") {
                     panel.style.display = "none";
@@ -774,7 +775,8 @@
 
         <style>
         .panel {
-            padding: 0 18px;
+            padding-left: 18px;
+            padding-right: 40px;
             background-color: white;
             max-height: 0;
             overflow: hidden;
