@@ -432,13 +432,17 @@ header nav ul li a {
   margin-top: 40px;
 }
 
+.textW {
+  padding: 0 40px;
+  text-align: center;
+}
+
 .we .prologue h2 {
   margin-left: 3%;
   text-align: left;
 }
 
 .we .slide-container{
-  /*max-width: 1120px;*/
   width: 100%;
   padding: 40px 0;
 }
